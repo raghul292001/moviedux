@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Moviedux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that allows users to browse and filter a list of movies. The app provides options to filter movies by their rating, genre, and search term.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Display a list of movies with their details (title, genre, rating, etc.)
+- Filter movies based on:
+  - **Rating**: Choose a minimum rating to display movies.
+  - **Genre**: Select one or more genres to filter the movies.
+  - **Search Term**: Search movies by title.
+  
+## Technologies Used
 
-### `npm start`
+- **React**: For building the user interface.
+- **React Hooks**: For managing state and side effects.
+- **CSS**: For styling the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with the project, follow these steps:
 
-### `npm test`
+1. **Clone the repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/raghul292001/moviedux.git
+cd moviedux
+```
 
-### `npm run build`
+2. **Install dependencies:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the development server:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+This will open the app in your browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How It Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Movie Data**: The app has a list of movies, each with attributes like title, genre, and rating.
+2. **Filters**: 
+   - **Rating**: You can filter movies that have a rating higher than the specified value.
+   - **Genre**: Select one or more genres to narrow down the movie list.
+   - **Search Term**: Use the search box to find movies by their title.
+3. **State Management**: React hooks (`useState`, `useEffect`) are used to manage and update the state of the filters and the displayed list of movies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **MovieList**: Displays the filtered list of movies.
+- **FilterBar**: Provides controls for filtering movies by rating, genre, and search term.
+- **MovieItem**: Displays details for each movie (like title, genre, and rating).
 
-## Learn More
+## Example Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once the app is up and running, you can use the following filter controls:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Search Movies**: Enter a movie title in the search box to find matching results.
+2. **Filter by Rating**: Select a minimum rating to only show movies with a rating higher than the selected value.
+3. **Filter by Genre**: Choose one or more genres from the dropdown to filter the movie list accordingly.
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize this template with your app-specific details or modify the features based on what you implemented!
